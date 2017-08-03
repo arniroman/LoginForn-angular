@@ -9,6 +9,8 @@ import { AppComponent } from './app.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { LoginComponent } from './login/login.component';
 import { PageProfileComponent } from './page-profile/page-profile.component';
+import { ForgotPassComponent } from './forgot-pass/forgot-pass.component';
+import { DataOfUsersComponent } from './data-of-users/data-of-users.component';
 
 
 @NgModule({
@@ -17,6 +19,8 @@ import { PageProfileComponent } from './page-profile/page-profile.component';
     RegistrationComponent,
     LoginComponent,
     PageProfileComponent,
+    ForgotPassComponent,
+    DataOfUsersComponent
 
   ],
   imports: [
@@ -26,6 +30,6 @@ import { PageProfileComponent } from './page-profile/page-profile.component';
     FormsModule
   ],
   providers: [UsersService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

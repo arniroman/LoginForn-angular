@@ -34,6 +34,7 @@ export class LoginComponent implements OnInit {
 
   onSubmit(formControls) {
     const isValidUser = this.loginService.validateUser(this.users, formControls);
+    console.log(this.users)
     isValidUser ? this.router.navigate(['/page-profile']):
                       alert('Incorrect password or email');
   }

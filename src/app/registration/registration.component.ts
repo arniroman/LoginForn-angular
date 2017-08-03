@@ -25,12 +25,14 @@ export class RegistrationComponent implements OnInit {
     })
   }
   // onSubmit(user) {
-  //   this.userService.addUser(user);
-  //   this.router.navigate(['/profile']);
+  //   this.usersService.addUser(user);
+  //   // this.router.navigate(['/profile']);
+  //   //  console.log(this.usersService)
   // }
-  onSubmit(user) {
+  onCreate(user) {
     this.usersService.addUser(user);
-    this.router.navigate(['/login'])
-    }
+    // console.log(user)
+    this.router.navigate(['/login']);
+  }
 
 }

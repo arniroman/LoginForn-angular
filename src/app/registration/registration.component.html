@@ -2,7 +2,7 @@
 Field with a name
 ----->
 <div class="container">
-    <form novalidate [formGroup]="regForm" (ngSubmit)="onSubmit(regForm.value)">
+    <form novalidate [formGroup]="regForm" (ngSubmit)="onCreate(regForm.value)">
         <div class="form-group">
             <label for="name">name</label>
             <input type="text"
