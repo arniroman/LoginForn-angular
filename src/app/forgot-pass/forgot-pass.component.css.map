@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,aAAa;EACX,KAAK,EAAE,KAAK;;AAEd,gBAAgB;EAChB,YAAY,EAAE,IAAI",
+"sources": ["forgot-pass.component.scss"],
 "names": [],
 "file": "forgot-pass.component.css"
 }

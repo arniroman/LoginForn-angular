@@ -1,4 +1,5 @@
-<form novalidate [formGroup]="logForm" (ngSubmit)="onSubmit(logForm.value)">
+<div class="wrapper">
+<form novalidate [formGroup]="logForm" (ngSubmit)="onSubmit(logForm.value)" class="wrapp_login">
   <div class="form-group">
     <label for="email">email</label>
     <input type="text"
@@ -17,12 +18,11 @@
     <div *ngIf="logForm.get('password').hasError('required') && logForm.get('password').touched" class="alert alert-danger">Required field</div>
     <div *ngIf="logForm.get('password').hasError('minlength') && logForm.get('password').touched" class="alert alert-danger">Minimum 3 characters</div>
   </div>
-
-  <input type="submit" class="btn btn-degault"
-         [disabled]="logForm.invalid" value="Login">
+  <input type="submit" class="btn btn-primary login" [disabled]="logForm.invalid" value="Login">
 </form>
 
 <div class="Auxiliary__buttons ">
-  <button md-button routerLink="/registration" class="login__reg">Registration</button>
-  <button md-button routerLink="/forgot-password" class="login__forgot">Forgot password</button>
+  <button md-button routerLink="/registration" class="btn btn-default btn-lg button_regist">Registration</button>
+  <button md-button routerLink="/forgot-password" class="btn btn-default btn-lg ">Forgot password</button>
+</div>
 </div>

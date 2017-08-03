@@ -15,7 +15,7 @@ export class DataOfUsersComponent implements OnInit {
 
   ngOnInit() {
     this.userEmail = JSON.parse(localStorage.getItem('user')).email;
-    this.userName = JSON.parse(localStorage.getItem('user')).name;
+    this.userName = JSON.parse(localStorage.getItem('user')).password;
     console.log(this.userEmail)
     console.log(this.userName)
   }

@@ -17,6 +17,7 @@ export class UsersService {
             name: userData.name,
             lastName: userData.lastName,
             email: userData.email,
+            data: userData.data,
             password: userData.password
         });
         console.log(userData)
@@ -29,14 +30,5 @@ export class UsersService {
         return [...usersObj];
     }
 
-    // findUserByEmail(userEmail) {
-    //     let rez = null;
-    //     this.getAllUsers().forEach((user => {
-    //         if (user.email === userEmail) {
-    //             rez = user;
-    //         }
-    //     }));
-    //     return rez;
-    // }
 
 }

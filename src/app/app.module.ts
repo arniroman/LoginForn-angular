@@ -2,8 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { UsersService } from './User.service';
 
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
+
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegistrationComponent } from './registration/registration.component';
@@ -14,6 +15,10 @@ import { DataOfUsersComponent } from './data-of-users/data-of-users.component';
 import { TableProfileComponent } from './table-profile/table-profile.component';
 import { SearchUserPipe } from './table-profile/search-suser';
 import { TimerComponent } from './timer/timer.component';
+
+
+
+
 
 
 @NgModule({
@@ -33,7 +38,8 @@ import { TimerComponent } from './timer/timer.component';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+
   ],
   providers: [UsersService],
   bootstrap: [AppComponent],

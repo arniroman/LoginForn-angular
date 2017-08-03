@@ -1,7 +1,7 @@
 <!-----
 Field with a name
 ----->
-<div class="container">
+<div class="container wrapp">
     <form novalidate [formGroup]="regForm" (ngSubmit)="onCreate(regForm.value)">
         <div class="form-group">
             <label for="name">name</label>
@@ -34,8 +34,18 @@ Field with a name
             <div *ngIf="regForm.get('email').hasError('required') && regForm.get('email').touched" class="alert alert-danger">Required field</div>
         </div>
         <!-----
-        Field with a password
-        ----->
+       Field with a email
+       ----->
+        <div class="form-group">
+            <label for="data">year of birth</label>
+            <input type="text"
+                   class="form-control"
+                   id="data"
+                   formControlName="data">
+            <div *ngIf="regForm.get('data').hasError('required') && regForm.get('data').touched" class="alert alert-danger">Required field</div>
+            <div *ngIf="regForm.get('data').hasError('minlength') && regForm.get('data').touched" class="alert alert-danger">Minimum 4 characters</div>
+        </div>
+
         <div class="form-group">
             <label for="password">password</label>
             <input type="password"
@@ -48,7 +58,7 @@ Field with a name
         <!-----
         Button with data
         ----->
-        <input type="submit" class="btn btn-degault"
+        <input type="submit" class="btn btn-degault button__reg"
                [disabled]="regForm.invalid" value="Registation">
     </form>
 </div>

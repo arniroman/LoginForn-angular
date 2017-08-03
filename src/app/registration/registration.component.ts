@@ -21,17 +21,16 @@ export class RegistrationComponent implements OnInit {
       name: ['', Validators.required],
       lastName: ['', Validators.required],
       email: ['',[Validators.required, Validators.email]],
-      password: ['', [Validators.required, Validators.minLength(3)]]
+      data: ['', [Validators.required, Validators.minLength(4)]],
+      password:['', [Validators.required, Validators.minLength(3)]]
     })
   }
-  // onSubmit(user) {
-  //   this.usersService.addUser(user);
-  //   // this.router.navigate(['/profile']);
-  //   //  console.log(this.usersService)
-  // }
+
   onCreate(user) {
     this.usersService.addUser(user);
-    // console.log(user)
+    if (user.data < 2000){
+      alert('Registration is only allowed since 2000!')
+    }
     this.router.navigate(['/login']);
   }
 
