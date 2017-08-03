@@ -1,0 +1,55 @@
+<!-----
+Field with a name
+----->
+<div class="container">
+    <form novalidate [formGroup]="regForm" (ngSubmit)="onSubmit(regForm.value)">
+        <div class="form-group">
+            <label for="name">name</label>
+            <input type="text"
+                   class="form-control"
+                   id="name"
+                   formControlName="name">
+            <div *ngIf="regForm.get('name').hasError('required') && regForm.get('name').touched" class="alert alert-danger">Required field</div>
+        </div>
+        <!-----
+        Field with a lastname
+        ----->
+        <div class="form-group">
+            <label for="lastName">lastname</label>
+            <input type="text"
+                   class="form-control"
+                   id="lastName"
+                   formControlName="lastName">
+            <div *ngIf="regForm.get('lastName').hasError('required') && regForm.get('lastName').touched" class="alert alert-danger">Required field</div>
+        </div>
+        <!-----
+        Field with a email
+        ----->
+        <div class="form-group">
+            <label for="email">email</label>
+            <input type="text"
+                   class="form-control"
+                   id="email"
+                   formControlName="email">
+            <div *ngIf="regForm.get('email').hasError('required') && regForm.get('email').touched" class="alert alert-danger">Required field</div>
+        </div>
+        <!-----
+        Field with a password
+        ----->
+        <div class="form-group">
+            <label for="password">password</label>
+            <input type="password"
+                   class="form-control"
+                   id="password"
+                   formControlName="password">
+            <div *ngIf="regForm.get('password').hasError('required') && regForm.get('password').touched" class="alert alert-danger">Required field</div>
+            <div *ngIf="regForm.get('password').hasError('minlength') && regForm.get('password').touched" class="alert alert-danger">Minimum 3 characters</div>
+        </div>
+        <!-----
+        Button with data
+        ----->
+        <input type="submit" class="btn btn-degault"
+               [disabled]="regForm.invalid" value="Registation">
+    </form>
+</div>
+
