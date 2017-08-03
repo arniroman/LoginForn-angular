@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,MAAM;EACJ,YAAY,EAAE,KAAK",
+"sources": ["timer.component.scss"],
+"names": [],
+"file": "timer.component.css"
+}

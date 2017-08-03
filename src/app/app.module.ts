@@ -13,6 +13,7 @@ import { ForgotPassComponent } from './forgot-pass/forgot-pass.component';
 import { DataOfUsersComponent } from './data-of-users/data-of-users.component';
 import { TableProfileComponent } from './table-profile/table-profile.component';
 import { SearchUserPipe } from './table-profile/search-suser';
+import { TimerComponent } from './timer/timer.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { SearchUserPipe } from './table-profile/search-suser';
     DataOfUsersComponent,
     TableProfileComponent,
     SearchUserPipe,
+    TimerComponent,
 
   ],
   imports: [

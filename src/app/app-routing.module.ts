@@ -6,6 +6,7 @@ import { PageProfileComponent } from './page-profile/page-profile.component';
 import { ForgotPassComponent } from './forgot-pass/forgot-pass.component';
 import { DataOfUsersComponent } from './data-of-users/data-of-users.component';
 import { TableProfileComponent } from './table-profile/table-profile.component';
+import { TimerComponent } from './timer/timer.component';
 
 const routes: Routes = [
   {
@@ -28,6 +29,9 @@ const routes: Routes = [
     children:[{
       path:'table-profile',
       component: TableProfileComponent,
+    },{
+      path: 'timer',
+      component:TimerComponent
     }]
   },
   {
