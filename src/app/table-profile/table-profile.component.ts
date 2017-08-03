@@ -8,6 +8,7 @@ import { UsersService } from '../User.service';
 })
 export class TableProfileComponent implements OnInit {
   users;
+  letters;
   constructor(private usersService:UsersService) { }
 
   ngOnInit() {

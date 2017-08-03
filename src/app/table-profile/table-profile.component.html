@@ -11,7 +11,21 @@
       <td class="table-item">{{user.lastName}}</td>
       <td class="table-item">{{user.email}}</td>
       <!--<td class="table-item">{{user.dateOfBirth | date}}</td>-->
-
     </tr>
   </table>
+</div>
+<div class="search__users">
+  <form class="search__form">
+    <label class="search__input">Search:</label>
+    <input type="text" [(ngModel)]="letters" [ngModelOptions]="{standalone: true}"
+           id="name" placeholder="Search by name ...">
+  </form>
+
+  <ul class="list__search">
+    <li class="list__item" *ngFor="let user of users | searchUser:letters:users">
+      <p>{{user.name}}</p>
+      <p>{{user.email}}</p>
+    </li>
+  </ul>
+
 </div>

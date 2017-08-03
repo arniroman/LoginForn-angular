@@ -12,6 +12,7 @@ import { PageProfileComponent } from './page-profile/page-profile.component';
 import { ForgotPassComponent } from './forgot-pass/forgot-pass.component';
 import { DataOfUsersComponent } from './data-of-users/data-of-users.component';
 import { TableProfileComponent } from './table-profile/table-profile.component';
+import { SearchUserPipe } from './table-profile/search-suser';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { TableProfileComponent } from './table-profile/table-profile.component';
     PageProfileComponent,
     ForgotPassComponent,
     DataOfUsersComponent,
-    TableProfileComponent
+    TableProfileComponent,
+    SearchUserPipe,
 
   ],
   imports: [
