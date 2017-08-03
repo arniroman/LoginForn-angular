@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageProfileComponent implements OnInit {
 
-  constructor() { }
+  currentUserData;
+
+  constructor() {
+  }
 
   ngOnInit() {
+    this.currentUserData = JSON.parse(localStorage.getItem('user'));
   }
 
 }

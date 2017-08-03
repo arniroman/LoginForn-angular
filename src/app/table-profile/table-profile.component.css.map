@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,aAAc;EACZ,OAAO,EAAE,UAAU;;AAGrB,WAAW;EACT,OAAO,EAAC,SAAS;;AAGnB,WAAY;EACV,OAAO,EAAE,UAAU;;AAErB,eAAe;EACb,MAAM,EAAE,eAAe",
+"sources": ["table-profile.component.scss"],
+"names": [],
+"file": "table-profile.component.css"
+}

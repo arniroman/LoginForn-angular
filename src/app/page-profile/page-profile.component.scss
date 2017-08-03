@@ -1,0 +1,29 @@
+.wrapper{
+  width: 100%;
+}
+.header{
+  background: #3879D9;
+  height: 70px;
+}
+.header__left{
+  float: left;
+  padding-top: 25px;
+}
+.header__right{
+  float: right;
+  margin: 18px 20px 0 0;
+}
+nav{
+  text-align: center;
+}
+
+.list__item{
+  display: inline-block;
+  padding: 15px;
+}
+
+.dateOf__users{
+  padding-top: 10px;
+  font-size: 16px;
+
+}

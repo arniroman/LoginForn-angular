@@ -5,6 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { PageProfileComponent } from './page-profile/page-profile.component';
 import { ForgotPassComponent } from './forgot-pass/forgot-pass.component';
 import { DataOfUsersComponent } from './data-of-users/data-of-users.component';
+import { TableProfileComponent } from './table-profile/table-profile.component';
 
 const routes: Routes = [
   {
@@ -23,7 +24,11 @@ const routes: Routes = [
   },
   {
     path: 'page-profile',
-    component: PageProfileComponent
+    component: PageProfileComponent,
+    children:[{
+      path:'table-profile',
+      component: TableProfileComponent,
+    }]
   },
   {
     path: 'forgot-password',

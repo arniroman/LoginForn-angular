@@ -11,6 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { PageProfileComponent } from './page-profile/page-profile.component';
 import { ForgotPassComponent } from './forgot-pass/forgot-pass.component';
 import { DataOfUsersComponent } from './data-of-users/data-of-users.component';
+import { TableProfileComponent } from './table-profile/table-profile.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { DataOfUsersComponent } from './data-of-users/data-of-users.component';
     LoginComponent,
     PageProfileComponent,
     ForgotPassComponent,
-    DataOfUsersComponent
+    DataOfUsersComponent,
+    TableProfileComponent
 
   ],
   imports: [
